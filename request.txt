@@ -1,0 +1,5 @@
+curl -X GET localhost:8080/exchange -H "Content-Type: application/json" -d "{\"userId\":123,\"value\":123.0,\"currencyFrom\":\"USD\",\"currencyTo\":\"RUB\"}"
+
+curl -X GET localhost:8080/stats/popular
+curl -X GET localhost:8080/stats/users_total_value_more_than?value=10
+curl -X GET localhost:8080/stats/users_single_value_more_than?value=10
